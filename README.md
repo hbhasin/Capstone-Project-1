@@ -31,7 +31,7 @@ The following project files are located in this project directory:
 
 [Denver 2016 Bike Share Multi-Class Classification Modeling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Multi-Class%20Classification%20Modeling.ipynb) - Multi-Class Classification Modeling Notebook.
 
-[./data](https://github.com/hbhasin/Capstone-Project-1/tree/master/data) - Folder containing data files used in the Python notebooks.
+[./data](https://github.com/hbhasin/Capstone-Project-1/tree/master/data) - Folder containing data files used in the Python scripts and in the notebooks.
 
 [./figures](https://github.com/hbhasin/Capstone-Project-1/tree/master/figures) - Folder containing figures used in the Python notebooks.
 
