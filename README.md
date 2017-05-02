@@ -17,9 +17,9 @@ The following project files are located in this project directory:
 
 [Denver_2016_Excel_to_CSV_File_Conversion](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_2016_Excel_to_CSV_File_Conversion.ipynb) -- Converts the Trips dataset Excel spreadsheet from a hefty 27MB file size to a reasonable 6MB compressed file.
 
-[Denver_Bike_Share_Distance_Duration_Submit](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Bike_Share_Distance_Duration_Submit.py) - Used to retrieve distances between checkout and return kiosks from [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/).
+[Denver_Bike_Share_Distance_Duration_Submit](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Bike_Share_Distance_Duration_Submit.py) - Python 3.6 script to retrieve distances between checkout and return kiosks from [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/).
 
-[Denver 2016 Bike Share Weather Data Consolidation](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Weather%20Data%20Consolidation.ipynb) - Used to retrieve weather attributes from [Dark Sky API](https://darksky.net/dev/).
+[Denver 2016 Bike Share Weather Data Consolidation](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Weather%20Data%20Consolidation.ipynb) - Python 2.7 script used to retrieve weather attributes from [Dark Sky API](https://darksky.net/dev/).
 
 [Denver 2016 Bike Share - Data Wrangling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20-%20Data%20Wrangling.ipynb) - Data Wrangling Notebook.
 
