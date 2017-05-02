@@ -19,9 +19,9 @@ The following project files are located in this project directory:
 
 [Denver_Bike_Share_Distance_Duration_Submit](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Bike_Share_Distance_Duration_Submit.py) - Python 3.6 script to retrieve distances between checkout and return kiosks from [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/).
 
-[Denver_Daily_Forecast_2016](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Daily_Forecast_2016.py) - Python 2.7 script used to retrieve daily weather attributes from [Dark Sky API](https://darksky.net/dev/).
+[Denver Daily Forecast_2016](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Daily_Forecast_2016.py) - Python 2.7 script used to retrieve daily weather attributes from [Dark Sky API](https://darksky.net/dev/).
 
-[Denver_Hourly_Forecast_2016](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Hourly_Forecast_2016.py) - Python 2.7 script used to retrieve hourly weather attributes from [Dark Sky API](https://darksky.net/dev/).
+[Denver Hourly Forecast_2016](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver_Hourly_Forecast_2016.py) - Python 2.7 script used to retrieve hourly weather attributes from [Dark Sky API](https://darksky.net/dev/).
 
 [Denver 2016 Bike Share Weather Data Consolidation](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Weather%20Data%20Consolidation.ipynb) - Merges the daily and hourly weather attributes from [Dark Sky API](https://darksky.net/dev/) into the Trips dataset.
 
