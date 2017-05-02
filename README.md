@@ -27,6 +27,10 @@ The following project files are located in this project directory:
 
 [Denver 2016 Bike Share Multi-Class Classification Modeling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Multi-Class%20Classification%20Modeling.ipynb) - Multi-Class Classification Modeling Notebook.
 
+[./data](https://github.com/hbhasin/Capstone-Project-1/tree/master/data) - Folder containing data files used in the Python notebooks.
+
+[./figures](https://github.com/hbhasin/Capstone-Project-1/tree/master/figures) - Folder containing figures used in the Python notebooks.
+
 
 ### Data Sources
 [Denver B-cycle](https://www.denverbcycle.com/company) - The Trips dataset is located under [Denver B-cycle Trip Data](http://denver.bcycle.com/docs/librariesprovider34/default-document-library/2016denverbcycletripdata_public.xlsx?sfvrsn=2). The Kiosk dataset is located under [Denver B-Cycle Station Location Data](https://denver.bcycle.com/docs/librariesprovider34/default-document-library/october2016_kioskinfo.xlsx?sfvrsn=2).
