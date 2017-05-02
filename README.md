@@ -1,10 +1,10 @@
 ## Capstone-Project-1
 # Denver 2016 Bike Share
 
-### Project Summary
+## Project Summary
 This project was undertaken to fulfill one of the two Capstone projects required by [SpringBoard.com](https://springboard.com). It explores the Denver 2016 Bike Share Trips dataset and follows up with regression and classification analytics deploying several popular machine learning algorithms.
 
-### Project Files
+## Project Files
 The following project files are located in this project directory:
 
 [README.md](https://github.com/hbhasin/Capstone-Project-1/blob/master/README.md) -- This document, with project description.
@@ -36,7 +36,7 @@ The following project files are located in this project directory:
 [./figures](https://github.com/hbhasin/Capstone-Project-1/tree/master/figures) - Folder containing figures used in the Python notebooks.
 
 
-### Data Sources
+## Data Sources
 [Denver B-cycle](https://www.denverbcycle.com/company) - The Trips dataset is located under [Denver B-cycle Trip Data](http://denver.bcycle.com/docs/librariesprovider34/default-document-library/2016denverbcycletripdata_public.xlsx?sfvrsn=2). The Kiosk dataset is located under [Denver B-Cycle Station Location Data](https://denver.bcycle.com/docs/librariesprovider34/default-document-library/october2016_kioskinfo.xlsx?sfvrsn=2).
 
 Distances between Checkout and Return Kiosks: Distances were retrieved from [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) using Python 3.6 script.
@@ -45,8 +45,8 @@ Weather Data: Retrieved from [Dark Sky API](https://darksky.net/dev/) using Pyth
 
 Geo-spatial Mapping: [Tableau](https://public.tableau.com/) was used to map the number of bike checkouts and returns by kiosks.
 
-### Analysis Software
+## Analysis Software
 All data analyses were done in Python and publicly available libraries using Jupyter Notebook and IDLE except for the geo-spatial mapping of the number of bike checkouts and returns by kiosks which was done using Tableau.
 
-### Acknowlegements
+## Acknowlegements
 The original plan was to use the Denver 2015 Trips dataset to continue the work by [Tyler Byers](https://github.com/tybyers/denver_bcycle). Fortunately, the 2016 dataset became available just in time for this project's undertaking. While there are certainly some differences between how the data were analyzed and reported by Denver B-Cycle and the author, credit must go to Denver B-Cycle for publishing its 2016 annual report and posting the 2016 dataset for public consumption and for use in this project in a timely and professional manner.
