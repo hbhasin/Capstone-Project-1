@@ -7,8 +7,11 @@ This project was undertaken to fulfill one of the two Capstone projects required
 The following project files are located in this project directory:
 
 [README.md](https://github.com/hbhasin/Capstone-Project-1/blob/master/README.md) -- This document, with project description.
+
 [Denver 2016 Bike Share Data Exploration.pdf](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Data%20Exploration.pdf) -- Final Project in pdf format.
+
 [Denver 2016 Bike Share - Data Wrangling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20-%20Data%20Wrangling.ipynb) -- Data Wrangling Notebook.
+
 
 ### Client
 [Denver B-cycle](http://www.denverbcycle.com) and [Boulder B-cycle]( https://boulder.bcycle.com) are the clients for this project. According to [Bicycling]( http://www.bicycling.com/culture/news/the-50-best-bike-cities-of-2016), Denver and Boulder were among the 50 best bike cities of 2016. Naturally, both cities would like to see increased ridership year by year. Studying past trends and predicting future trends would benefit and assist these cities in planning their systems more effectively and efficiently.
