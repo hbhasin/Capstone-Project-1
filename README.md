@@ -46,7 +46,7 @@ Weather Data: Retrieved from [Dark Sky API](https://darksky.net/dev/) using Pyth
 Geo-spatial Mapping: [Tableau](https://public.tableau.com/) was used to map the number of bike checkouts and returns by kiosks.
 
 ## Analysis Software
-All data analyses were done in Python and publicly available libraries using Jupyter Notebook and IDLE except for the geo-spatial mapping of the number of bike checkouts and returns by kiosks which was done using Tableau.
+All data analyses were done in Python and with publicly available libraries using Jupyter Notebook and IDLE except for the geo-spatial mapping of the number of bike checkouts and returns by kiosks which was done using Tableau.
 
 ## Acknowlegements
 The original plan was to use the Denver 2015 Trips dataset to continue the work by [Tyler Byers](https://github.com/tybyers/denver_bcycle). Fortunately, the 2016 dataset became available just in time for this project's undertaking. While there are certainly some differences between how the data were analyzed and reported by Denver B-Cycle and the author, credit must go to Denver B-Cycle for publishing its 2016 annual report and posting the 2016 dataset for public consumption and for use in this project in a timely and professional manner.
