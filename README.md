@@ -1,8 +1,8 @@
 ## Capstone-Project-1
-# Denver/Boulder Bike Share
+# Denver 2016 Bike Share
 
-### Overview
-Denver, Boulder and Lakewood are three cities in Colorado that participate in [B-cycle](https://en.wikipedia.org/wiki/B-cycle), a public bicycle sharing company. Data from Denver and Boulder bicycle ridership have been available since 2010 for public consumption and for use in data wrangling and munging.
+### Project Summary
+This project was undertaken to fulfill one of the two Capstone projects required by [SpringBoard.com] (https://springboard.com). It explores the Denver 2016 Bike Share Trips dataset and follows up with regression and classification analytics deploying several popular machine learning algorithms.
 ### Goal
 The goal of this Capstone project is to explore the available data using popular data visualizations tools such as [Tableau](https://public.tableau.com), [OpenStreetMap](https://www.openstreetmap.org), [Mapbox](https://www.mapbox.com/), and [D3js](https://d3js.org/), and predict ridership using weather and time of day using a linear model such as linear regressor and non-linear classifier models such as Random Forest and Gradient Boosting.
 ### Client
