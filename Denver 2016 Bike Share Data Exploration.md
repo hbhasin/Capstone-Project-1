@@ -36,10 +36,6 @@ Also over 2.3% of the Denver B-cycle rides (9,954 rides) had the same checkout s
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
 
-<!--To center an image-->
-<p align="center">
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
-</p>
 FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME
 
 There were 6574 rows in the Trips dataset that had kiosk names not in the Kiosk Master List. These 6574 rows were removed accordingly.
