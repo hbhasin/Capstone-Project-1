@@ -71,7 +71,7 @@ Return Kiosk | Number of Checkouts
 16th & Wynkoop | 11,289
 1350 Larimer | 10,920
 16th & Broadway | 10,870
-18th & California	9,863
+18th & California | 9,863
 1550 Glenarm | 9,501
 18th & Arapahoe | 8,549
 20th & Chestnut | 8,356
@@ -326,11 +326,13 @@ In his study, Tyler attempted to create a linear regression model using a number
 In this section various linear and non-linear regression models were used to test and train the Trips data that was merged with the weather data to try to predict the number of checkouts based on weather conditions.
 The following regression models with their brief explanation were used in this study:
 	
-1. Linear Regression
-	1. Most widely used statistical and machine learning technique to model relationship between two sets of variables typically using a straight line. Simple to use and fast performance but lacks high accuracy when compared to non-linear models.
-1. Lasso Regression
-	1. A type of linear regression that uses shrinkage to reduce data values toward the mean. Well suited for automating feature selection.
+* Linear Regression
+  * Most widely used statistical and machine learning technique to model relationship between two sets of variables typically using a straight line. Simple to use and fast performance but lacks high accuracy when compared to non-linear models.
+	
+* Lasso Regression
+  * A type of linear regression that uses shrinkage to reduce data values toward the mean. Well suited for automating feature selection.
 1. Ridge Regression
+
 	1. Well suited for data that suffers from multicollinearity, i.e. features with high correlation.
 1. Bayesian Ridge Regression
 	1. An approach to linear regression in which the statistical analysis is undertaken using Bayesian inference.
