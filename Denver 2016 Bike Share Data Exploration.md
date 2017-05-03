@@ -98,3 +98,28 @@ Colfax & Gaylord | 1,421
 The use of Tableau aided in the creation of the following map showing the popularity of the various Checkout Kiosks (Figure 2). The size of the circle is proportional to the number of checkouts from that kiosk in 2016. 
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Checkouts_By_Checkout_Kiosk.JPG)
+
+FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016
+
+Return Kiosks 
+Similarly, the use of Tableau aided in the creation of the following map showing the popularity of the various Return Kiosks (Figure 3). The size of the circle corresponds to the number of checkouts returned to that kiosk in 2016. 
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Returns_By_Return_Kiosks.JPG)
+
+FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
+
+### Checkouts per Membership Type 
+Denver B-cycle has a number of different membership passes. The following were the top ten by number of checkouts in 2016 (Figure 4).
+
+Membership Type | Number of Checkouts
+--------------- | -------------------
+24-hour Kiosk Only (Denver B-cycle | 85,680
+Annual Plus (Denver B-cycle) | 82,202
+Annual (Denver B-cycle) | 80,093
+Not Applicable | 56,250
+Monthly (Denver B-cycle) | 52,811
+Denver B-cycle Founder (Denver B-cycle) | 17,675
+Single Rider (Denver B-cycle) | 16,291
+Republic Rider (Annual) (Boulder B-cycle) | 5,930
+Flex Pass (Denver B-cycle) | 3,507
+Republic Rider (Boulder B-cycle) | 1,229
