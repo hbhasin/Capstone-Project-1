@@ -34,9 +34,8 @@ In particular, the “Not Applicable” membership type accounted for more than 
 
 Also over 2.3% of the Denver B-cycle rides (9,954 rides) had the same checkout station as return station with a trip duration of only 1 minute (Figure 1). Again, Tyler’s explanation of why these trips should be removed from the dataset makes sense - “I believe these should be filtered out because I believe the majority of these “rides” are likely people checking out a bike, and then deciding after a very short time that this particular bike doesn’t work for them. I believe that most of the same-kiosk rides under 5 minutes or so likely shouldn’t count, but only culled the ones that were one minute long”.
 
-<p align="center">
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
-</p>
+
 FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME
 
 There were 6574 rows in the Trips dataset that had kiosk names not in the Kiosk Master List. These 6574 rows were removed accordingly.
@@ -129,3 +128,97 @@ Republic Rider (Boulder B-cycle) | 1,229
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Membership%20Type%20Breakdown.PNG)
 
 FIGURE 4: NUMBER OF CHECKOUTS BY MEMBERSHIP TYPE IN 2016
+
+## Ridership by Calendar and Clock Variables 
+### Ridership by Hour 
+Bike checkout time is probably the most important attribute in the Trips dataset. Each checkout time was converted into its integer hour. For example, 7:02 AM or 7:59 AM would be converted to an integer of 7. In this way, total number of checkouts could be aggregated for the year and plotted against their hours of the day, as shown in Figure 5.
+
+It appears that the highest number of checkouts occur between 4 PM and 5 PM with ridership increasing steadily from 10 AM onwards.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%205.PNG)
+
+FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016
+
+Figure 6 shows the average distance ridden by the hour of the day in 2016. More distance is covered during the 10 AM period and declining steadily after 3 PM.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%206.PNG)
+
+FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016
+
+## Ridership by Hour and Weekday 
+Figure 7 shows that weekday ridership patterns are similar. On the other hand weekend ridership demonstrate a busy afternoon (between 12 PM and 3 PM)
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%207.PNG)
+
+FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016
+
+## Ridership by Month 
+Monthly checkouts, as shown in Figure 8, suggest high ridership during the summer months and low ridership during the winter months.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%208.PNG)
+
+FIGURE 8: TOTAL CHECKOUTS BY MONTH IN 2016
+
+## Merging with Weather 
+
+It is highly likely that weather plays a very important role in bike ridership and bike checkout times. This was shown in the previous plots on total checkouts per hour of the day, by weekday, and by month. To verify this, weather data obtained from Dark Sky API was merged with the Trips dataset and several graphs plotted to visualize the relationships.
+
+### Checkouts vs. Daily Temperature 
+
+Figure 9 shows the total number of checkouts against maximum and minimum daily temperature. It clearly suggests that ridership increases as the temperature increases and vice-versa.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%209.PNG)
+
+FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016
+
+Apparent temperature, as defined by Dark Sky, is “apparent (or “feels like”) temperature in degrees Fahrenheit”. It appears to have a subtle effect on bike ridership as shown in Figure 10.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2010.PNG)
+
+FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016
+
+## Checkouts vs. Daily Cloud Cover 
+Dark Sky defines Cloud Cover as “the percentage of sky occluded by clouds, between 0 and 1, inclusive”. Figures 11 shows the total number of checkouts against daily cloud cover. They clearly suggest that ridership is highest as the cloud cover stays at around 0.15.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2011.PNG)
+
+FIGURE 11: TOTAL CHECKOUTS BY DAILY CLOUD COVER IN 2016
+
+## Checkouts vs. Daily Wind Speed 
+Wind speed is reported in miles per hour. As shown in Figure 12, ridership does not seem to be somewhat impacted by higher wind speeds. 
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2012.PNG)
+
+FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016
+
+## Checkouts vs. Daily Humidity 
+Humidity is defined by Dark Sky as “relative humidity, between 0 and 1. Figure 13 shows decreased ridership at higher humidity levels.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2013.PNG)
+
+FIGURE 13: TOTAL CHECKOUTS BY DAILY HUMIDITY IN 2016	
+
+## Checkouts vs. Daily Visibility 
+Visibility is measured in miles and capped at 10 miles, according to Dark Sky. As Figure 14 shows, ridership peaks when visibility is at 10 miles.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2014.PNG)
+
+FIGURE 14: TOTAL CHECKOUTS BY DAILY VISIBILITY IN 2016
+
+## Days with Highest/Lowest Ridership
+Another interesting data discovery was the fact that Saturdays and Sundays had the highest and lowest ridership depending upon the weather. In his study, Tyler suggests that this may be due to “‘weekend warriors’ who rent B-cycles for pleasure and are highly affected by the weather in their decision to ride”. This may well be the case.
+
+### Highest Ridership
+
+Membership Type | Number of Checkouts | Max Temperature | Min Temperature | Number of Checkouts
+--------------- | ------------------- | --------------- | --------------- | -------------------
+Sunday | 2016-05-29 | 71.090 | 44.100 | 2,100
+Saturday | 2016-05-28 | 65.650 | 40.330 | 1,990
+Friday | 2016-06-03 | 74.600 | 56.120 | 1,933
+Wenesday | 2016-06-15 | 85.430 | 51.980 | 1,927
+Saturday | 2016-06-21 | 77.510 | 49.790 | 1,909
+Monday | 2016-06-27 | 87.060 | 58.440 | 1,868
+Saturday | 2016-06-25 | 79.230 | 61.040 | 1,868
+Saturday | 2016-06-04 | 75.500 | 53.410 | 1,857
+Thursday | 2016-03-23 | 84.860 | 59.280 | 1,857
+Friday | 2016-09-02 | 79.770 | 59.500 | 1,855
