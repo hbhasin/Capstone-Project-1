@@ -51,6 +51,7 @@ To estimate the distance between checkout and return kiosks when they are the sa
 ### Most Popular 
 The following ten kiosks were the most popular checkout kiosks by number of total bike checkouts in 2016.
 
+<p align="center">
 Checkout Kiosk | Number of Checkouts
 -------------- | -------------------
 16th & Wynkoop | 11,174
@@ -63,9 +64,11 @@ Checkout Kiosk | Number of Checkouts
 13th & Speer | 8,228
 REI	 | 8,218
 16th & Little Raven | 8,198
+</p>
 
-The following ten kiosks were the most popular return kiosks by number of total bike checkouts in 2016. 
+The following ten kiosks were the most popular return kiosks by number of total bike checkouts in 2016.
 
+<p align="center">
 Return Kiosk | Number of Checkouts
 ------------ | -------------------
 16th & Wynkoop | 11,289
@@ -78,10 +81,12 @@ Return Kiosk | Number of Checkouts
 REI | 8,284
 13th & Speer | 8,272
 16th & Little Raven | 8,267
-	
+</p>
+
 ### Least Popular 
 The following ten kiosks were the least popular checkout kiosks by number of total bike checkouts in 2016.
 
+<p align="center">
 Checkout Kiosk | Number of Checkouts
 -------------- | -------------------
 Pepsi Center | 1,795
@@ -94,6 +99,7 @@ Denver Zoo | 1,490
 Colfax & Gaylord | 1,421
 17th & Curtis | 615
 39th & Fox | 332
+</p>
 
 ## Map of Station Popularity
 ### Checkout Kiosks 
@@ -111,7 +117,9 @@ Similarly, the use of Tableau aided in the creation of the following map showing
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Returns_By_Return_Kiosks.JPG)
 
+<p align="center">
 FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
+</p>
 
 ## Checkouts per Membership Type 
 Denver B-cycle has a number of different membership passes. The following were the top ten by number of checkouts in 2016 (Figure 4).
@@ -236,8 +244,8 @@ Another interesting data discovery was the fact that Saturdays and Sundays had t
 
 ### Highest Ridership
 
-Membership Type | Number of Checkouts | Max Temperature | Min Temperature | Number of Checkouts
---------------- | ------------------- | --------------- | --------------- | -------------------
+Checkout Week Day | Number of Checkouts | Max Temperature | Min Temperature | Number of Checkouts
+----------------- | ------------------- | --------------- | --------------- | -------------------
 Sunday | 2016-05-29 | 71.090 | 44.100 | 2,100
 Saturday | 2016-05-28 | 65.650 | 40.330 | 1,990
 Friday | 2016-06-03 | 74.600 | 56.120 | 1,933
@@ -248,3 +256,20 @@ Saturday | 2016-06-25 | 79.230 | 61.040 | 1,868
 Saturday | 2016-06-04 | 75.500 | 53.410 | 1,857
 Thursday | 2016-03-23 | 84.860 | 59.280 | 1,857
 Friday | 2016-09-02 | 79.770 | 59.500 | 1,855
+
+### Lowest Ridership
+
+Checkout Week Day | Number of Checkouts | Max Temperature | Min Temperature | Number of Checkouts
+----------------- | ------------------- | --------------- | --------------- | -------------------
+Saturday | 2016-12-24 | 50.960 | 28.940 | 154
+Sunday 2016-04-17 | 34.710 | 30.140 | 140
+Sunday | 2016-01-31 | 31.260 | 23.430 | 133
+Wednesday | 2016-12-07 | 15.250 | -1.110 | 105
+Tuesday | 2016-02-02 | 20.870 | 11.430 | 72
+Saturday | 2016-04-16 | 34.430 | 31.310 | 61
+Sunday | 2016-12-25 | 36.860 | 25.290 | 56
+Wednesday | 2016-03-23 | 43.070 | 22.040 | 18
+Sunday | 2016-12-18 | 19.640 | -6.220 | 17
+Saturday | 2016-12-17 | 5.490 | -7.220 | 16
+
+
