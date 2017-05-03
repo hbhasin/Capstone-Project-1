@@ -61,3 +61,35 @@ Checkout Kiosk | Number of Checkouts
 REI	 | 8,218
 16th & Little Raven | 8,198
 
+The following ten kiosks were the most popular return kiosks by number of total bike checkouts in 2016. 
+
+Return Kiosk | Number of Checkouts
+------------ | -------------------
+16th & Wynkoop | 11,289
+1350 Larimer | 10,920
+16th & Broadway | 10,870
+18th & California	9,863
+1550 Glenarm | 9,501
+18th & Arapahoe | 8,549
+20th & Chestnut | 8,356
+REI | 8,284
+13th & Speer | 8,272
+16th & Little Raven | 8,267
+	
+### Least Popular 
+The following ten kiosks were the least popular checkout kiosks by number of total bike checkouts in 2016.
+
+Checkout Kiosk | Number of Checkouts
+-------------- | -------------------
+Pepsi Center | 1,795
+32nd & Julian | 1,755
+25th & Lawrence | 1,736
+Colfax & Garfield | 1,725
+4th & Walnut | 1.663
+Decatur Federal Light Rail | 1,508
+Denver Zoo | 1,490
+Colfax & Gaylord | 1,421
+17th & Curtis | 615
+39th & Fox | 332
+
+
