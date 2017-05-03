@@ -23,3 +23,8 @@ Data for this study was downloaded from several sources and combined using the f
 ### Basic Ridership Statistics 
 #### Number of Rides 
 The B-cycle data, as downloaded, contained 419,611 rows of trips data. Under normal circumstances this would mean that 419,611 B-cycle trips were taken in 2016. However, the [2016 Denver B-cycle annual report](http://denver.bcycle.com/docs/librariesprovider34/default-document-library/dbs_annualreport_2016_05.pdf) acknowledged 354,652 total trips for the year. The breakdown was as follows:
+
+Membership Type | Number of Trips
+------------ | -------------
+Annual (And Annual Plus) | 193,113
+Flex Pass | 3,565
