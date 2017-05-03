@@ -125,4 +125,5 @@ Flex Pass (Denver B-cycle) | 3,507
 Republic Rider (Boulder B-cycle) | 1,229
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Membership%20Type%20Breakdown.PNG)
+
 FIGURE 4: NUMBER OF CHECKOUTS BY MEMBERSHIP TYPE IN 2016
