@@ -323,7 +323,7 @@ FIGURE 20: TOTAL CHECKOUTS BY HOURLY VISIBILITY IN 2016
 # Part 2: Regression Modeling 
 
 In his study, Tyler attempted to create a linear regression model using a number of calendar and weather variables. Using temperature, temperature squared, humidity, month, weekday, hour of day, holiday and cloud cover as input variables he arrived at an R squared value of 0.7382 which meant that approximately 73.8% of the variation in the hourly ridership could be explained by the selected variables and the linear model he used to fit the data.
-In this section various linear and non-linear regression models were used to test and train the Trips data that was merged with the weather data to try to predict the number of checkouts based on weather conditions.
+In this section various linear and non-linear regression models were used to test and train the Trips data that was merged with the weather data to try to predict the number of checkouts based on calendar, clock and weather conditions.
 The following regression models with their brief explanation were used in this study:
 	
 * Linear Regression
@@ -331,21 +331,163 @@ The following regression models with their brief explanation were used in this s
 	
 * Lasso Regression
   * A type of linear regression that uses shrinkage to reduce data values toward the mean. Well suited for automating feature selection.
-1. Ridge Regression
 
-	1. Well suited for data that suffers from multicollinearity, i.e. features with high correlation.
-1. Bayesian Ridge Regression
-	1. An approach to linear regression in which the statistical analysis is undertaken using Bayesian inference.
-1. Decision Tree Regression
-	1. Uses a tree like structure to derive a final decision on the outcome of the analysis.
-1. Random Forest Regression
-	1. An ensemble learning method that operates by constructing a multitude of decision trees to arrive at the mean prediction.
-1. Extra Trees Regression
-	1. An extremely randomized tree regressor. Builds a totally random decision tree.
-1. Nearest Neighbors Regression
-	1. A simple algorithm that uses a similarity measure (e.g. distance between neighbors) to predict the outcome.
+* Ridge Regression
+  * Well suited for data that suffers from multicollinearity, i.e. features with high correlation.
+
+* Bayesian Ridge Regression
+  * An approach to linear regression in which the statistical analysis is undertaken using Bayesian inference.
+
+* Decision Tree Regression
+  * Uses a tree like structure to derive a final decision on the outcome of the analysis.
+
+* Random Forest Regression
+  * An ensemble learning method that operates by constructing a multitude of decision trees to arrive at the mean prediction.
+
+* Extra Trees Regression
+  * An extremely randomized tree regressor. Builds a totally random decision tree.
+
+* Nearest Neighbors Regression
+  * A simple algorithm that uses a similarity measure (e.g. distance between neighbors) to predict the outcome.
 
 ## Regression Modeling with Categorical Feature Set
 The Checkout Month, Week Day and Hour numeric variables were converted to categorical features resulting in 45 total features for regression modeling.
+
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2021.PNG)
+
+<p align="center">
+FIGURE 21: FEATURE CORRELATIONS
+</p>
+
+The models used for regression supported the use of several parameters that could be used to adjust or tune them for better performance. In most cases in this study, the parameters were set to default.
+
+The dataset was randomly spilt into 70% for training and 30% for testing. For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Extra Tree model is shown in Figure 22.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2022.PNG)
+
+<p align="center">
+FIGURE 22: EXTRA TREES REGRESSION MODEL FEATURE IMPORTANCE CHART
+</p>
+
+## Regression Modeling Summary – Categorical Feature Set
+
+Metric | Linear | Lasso | Ridge | Bayesian Ridge | Decision Tree | Random Forest | Extra Trees | Nearest Neighbors
+------ | ------ | ----- | ----- | -------------- | ------------- | ------------- | ----------- | -----------------
+Training Test Score | 0.676 | 0.676 | 0.676 | 0.676 | 1.000 | 0.969 | 1.000 | 0.575
+Test Set Score | 0.696 | 0.696 | 0.696 | 0.696 | 0.718 | 0.825 | 0.840 | 0.476
+R Squared | 0.834519 | 0.834457 | 0.834457 | 0.834448 | 0.847276 | 0.908443 | 0.916278 | 0.690249
+RMSE | 627.95439 | 628.16826 | 628.16826 | 628.19832 | 583.57445 | 361.43485 | 331.86035 | 1082.98114
+
+The Extra Trees regression model achieved the highest accuracy and the lowest RMSE. All the linear models (Linear, Lasso, Ridge and Bayesian Ridge) had twice the RMSE value of the Extra Trees model.
+
+## Regression Modeling with Numerical Feature Set
+
+Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 total features for regression modeling.
+
+Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 23, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2023.PNG)
+
+<p align="center">
+FIGURE 23: FEATURE CORRELATION
+</p>
+
+For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Extra Tree model is shown in Figure 24.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2024.PNG)
+
+<p align="center">
+FIGURE 24: RANDOM FOREST REGRESSION MODEL FEATURE IMPORTANCE CHART
+</p>
+
+## Regression Modeling Summary – Numerical Feature Set
+	Linear	Lasso	Ridge	Bayesian Ridge	Decision Tree	Random
+Forest	Extra Trees	Nearest
+Neighbors
+Training Test Score	0.433	0.433	0.433	0.433	1.000	0.975	1.000	0.880
+Test Set Score	0.448	0.447	0.447	0.447	0.741	0.854	0.838	0.646
+R Squared		0.669090	0.668243	0.668243	0.668785	0.861079	0.924077	0.915609	0.803447
+RMSE	1142.475	1144.818	1144.818	1143.319	534.800	302.172	334.397	733.229
+
+Regression Modeling Summary
+•	The data exploration phase of this study revealed the significance of weather variables on the ridership. The regression modeling phase confirmed this to be accurate. Looking at the feature importance graphs generated by the Extra Trees and Random Forest models, the weather attributes rank the highest.
+•	The non-linear regression models performed better than the linear models. In particular, even with a reduced feature set, the non-linear models such as the Random Forest and the Extra Trees were the best performers with R Squared values well above 0.9.
+
+
+Testing Regressor on unseen samples
+The Random Forest Regressor with a predictive accuracy of 92.4% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The regressor predicted 1 of the 10 samples accurately. Of the remaining 9 samples, it predicted well within the 7.6% range based on its accuracy on 8 samples.
+Sample Number	Actual Number of Checkouts	Predicted Number of Checkouts	+/-
+1	92	96	+4
+2		12	13	+1
+3	55	56	+1
+4	111	112	+1
+5	76	72	-4
+6	41	37	-4
+7	8	14	+6
+8	81	99	+18
+9	65	64	-1
+10		14	14	0
+
+Part 3: Classification Modeling 
+In this section various classification models were used to test and train the Trips data that was merged with the weather data to try to predict the checkout hour based on weather conditions.
+
+The following classification models were used in this study:
+•	Linear (Logistic) Classification
+o	Similar to linear regression but used for classification
+
+•	Decision Tree Classification
+o	Uses a tree like structure to derive at a final decision on the outcome of the analysis
+
+•	Random Forest Classification
+o	Similar to random forest regression but used for classification
+
+•	Extra Trees Classification
+o	Similar to extra trees regression but used for classification
+
+•	Naïve Bayes Classification
+o	Uses the Bayes’ Theorem (i.e. assumes that the presence of a particular feature is unrelated to the presence of any other feature)
+•	Gradient Boosting Classification
+o	A machine learning method that produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+
+•	Nearest Neighbors Classification
+o	Similar to nearest neighbors regressor but used for classification
+
+•	Multi-layer Perceptron Classification
+o	A feedforward artificial neural network mode that maps sets of input data onto a set of appropriate outputs.
+
+The dataset was randomly spilt into 70% for training and 30% for testing. The class labels were defined as follows:
+Class 0: Number of Checkouts >= 1 and <= 50
+Class 1: Number of Checkouts >=51 and <= 100
+Class 2: Number of Checkouts >= 101 and <= 150
+Class 3: Number of Checkouts >=151
+A cross validation using the Stratified Shuffle Split method was performed on the dataset for each model using a training sample size of 50% and a testing sample size of 50% with 10 splits.
+
+Classification Modeling – Categorical Feature Set
+As in the case of Regression modeling, feature correlation was carried out to determine if any features had a high correlation with one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted.
+
+
+
+Classification Modeling Summary – Categorical Feature Set
+		Logistic	Decision Tree	Random Forest	Extra Trees	Naïve Bayes	Nearest Neighbors	Gradient Boosting	Multi-Layer Perceptron
+Accuracy	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
+F1 (macro)	0.560579	0.642804	0.670351	0.701782	0.371971	0.413859	0.651137	0.630989
+F1 (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
+Precision (macro)	0.622020	0.636731	0.710195	0.710991	0.440307	0.497978	0.682317	0.676773
+Precision (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
+Recall (macro)	0.538820	0.650152	0.646257	0.694738	0.515025	0.411259	0.630477	0.614739
+Recall (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
+Cross Validation	0.718655	0.722281	0.777895	0.797076	0.448012	0.624035	0.748538	0.750175
+Execution Time (sec)	14.137227	0.304386	3.665370	3.346657	0.179008	0.977846	108.952438	9.298618
+
+The Extra Trees model attained the highest accuracy in classifying the four classes. The Naïve Bayes model performed the poorest.
+
+Classification Modeling – Numerical Feature Set
+Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 total features for regression modeling.
+As in the case of Regression modeling, feature correlation was carried out to determine if any features had a high correlation with one another. As shown in Figure 22, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest, Extra Trees and Gradient Boosting models also had their Feature Importance bar charts plotted. The chart for the Gradient Boosting model is shown in Figure 25.
+
+
 
