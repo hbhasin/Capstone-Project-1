@@ -46,4 +46,17 @@ To estimate the distance between checkout and return kiosks when they are the sa
 
 ### Most Popular and Least Popular Checkout and Return Kiosks 
 ### Most Popular 
-The following ten kiosks were the most popular checkout kiosks by number of total bike checkouts in 2016. 
+The following ten kiosks were the most popular checkout kiosks by number of total bike checkouts in 2016.
+
+Checkout Kiosk|	Number of Checkouts
+16th & Wynkoop | 11,174
+16th & Broadway |	3,565
+1350 Larimer | 10,837
+18th & California | 9,865
+1550 Glenarm | 9,441
+18th & Arapahoe | 8,531
+20th & Chestnut | 8,240
+13th & Speer | 8,228
+REI	 | 8,218
+16th & Little Raven | 8,198
+
