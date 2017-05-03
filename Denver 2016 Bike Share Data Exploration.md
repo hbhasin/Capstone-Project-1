@@ -82,7 +82,6 @@ REI | 8,284
 ### Least Popular 
 The following ten kiosks were the least popular checkout kiosks by number of total bike checkouts in 2016.
 
-<p align="center">
 Checkout Kiosk | Number of Checkouts
 -------------- | -------------------
 Pepsi Center | 1,795
@@ -95,7 +94,6 @@ Denver Zoo | 1,490
 Colfax & Gaylord | 1,421
 17th & Curtis | 615
 39th & Fox | 332
-</p>
 
 ## Map of Station Popularity
 ### Checkout Kiosks 
@@ -328,23 +326,22 @@ In his study, Tyler attempted to create a linear regression model using a number
 In this section various linear and non-linear regression models were used to test and train the Trips data that was merged with the weather data to try to predict the number of checkouts based on weather conditions.
 The following regression models with their brief explanation were used in this study:
 	
-•	Linear Regression
-o	Most widely used statistical and machine learning technique to model relationship between two sets of variables typically using a straight line. Simple to use and fast performance but lacks high accuracy when compared to non-linear models.
-•	Lasso Regression
-o	A type of linear regression that uses shrinkage to reduce data values toward the mean. Well suited for automating feature selection.
-•	Ridge Regression
-o	Well suited for data that suffers from multicollinearity, i.e. features with high correlation.
-•	Bayesian Ridge Regression
-o	An approach to linear regression in which the statistical analysis is undertaken using Bayesian inference.
-•	Decision Tree Regression
-o	Uses a tree like structure to derive a final decision on the outcome of the analysis.
-•	Random Forest Regression
-o	An ensemble learning method that operates by constructing a multitude of decision trees to arrive at the mean prediction.
-•	Extra Trees Regression
-o	An extremely randomized tree regressor. Builds a totally random decision tree.
-
-•	Nearest Neighbors Regression
-o	A simple algorithm that uses a similarity measure (e.g. distance between neighbors) to predict the outcome.
+1. Linear Regression
+	1. Most widely used statistical and machine learning technique to model relationship between two sets of variables typically using a straight line. Simple to use and fast performance but lacks high accuracy when compared to non-linear models.
+1. Lasso Regression
+	1. A type of linear regression that uses shrinkage to reduce data values toward the mean. Well suited for automating feature selection.
+1. Ridge Regression
+	1. Well suited for data that suffers from multicollinearity, i.e. features with high correlation.
+1. Bayesian Ridge Regression
+	1. An approach to linear regression in which the statistical analysis is undertaken using Bayesian inference.
+1. Decision Tree Regression
+	1. Uses a tree like structure to derive a final decision on the outcome of the analysis.
+1. Random Forest Regression
+	1. An ensemble learning method that operates by constructing a multitude of decision trees to arrive at the mean prediction.
+1. Extra Trees Regression
+	1. An extremely randomized tree regressor. Builds a totally random decision tree.
+1. Nearest Neighbors Regression
+	1. A simple algorithm that uses a similarity measure (e.g. distance between neighbors) to predict the outcome.
 
 ## Regression Modeling with Categorical Feature Set
 The Checkout Month, Week Day and Hour numeric variables were converted to categorical features resulting in 45 total features for regression modeling.
