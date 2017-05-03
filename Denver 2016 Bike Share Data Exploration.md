@@ -92,4 +92,9 @@ Colfax & Gaylord | 1,421
 17th & Curtis | 615
 39th & Fox | 332
 
+## Map of Station Popularity
+### Checkout Kiosks 
 
+The use of Tableau aided in the creation of the following map showing the popularity of the various Checkout Kiosks (Figure 2). The size of the circle is proportional to the number of checkouts from that kiosk in 2016. 
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/data/Checkouts_By_Checkout_Kiosk.JPEG)
