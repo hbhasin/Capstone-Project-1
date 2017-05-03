@@ -430,48 +430,55 @@ Sample Number	Actual Number of Checkouts	Predicted Number of Checkouts	+/-
 9	65	64	-1
 10		14	14	0
 
-Part 3: Classification Modeling 
+# Part 3: Classification Modeling 
 In this section various classification models were used to test and train the Trips data that was merged with the weather data to try to predict the checkout hour based on weather conditions.
 
 The following classification models were used in this study:
-•	Linear (Logistic) Classification
-o	Similar to linear regression but used for classification
 
-•	Decision Tree Classification
-o	Uses a tree like structure to derive at a final decision on the outcome of the analysis
+* Linear (Logistic) Classification
+  * Similar to linear regression but used for classification
 
-•	Random Forest Classification
-o	Similar to random forest regression but used for classification
+* Decision Tree Classification
+  * Uses a tree like structure to derive at a final decision on the outcome of the analysis
 
-•	Extra Trees Classification
-o	Similar to extra trees regression but used for classification
+* Random Forest Classification
+  * Similar to random forest regression but used for classification
 
-•	Naïve Bayes Classification
-o	Uses the Bayes’ Theorem (i.e. assumes that the presence of a particular feature is unrelated to the presence of any other feature)
-•	Gradient Boosting Classification
-o	A machine learning method that produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+* Extra Trees Classification
+  * Similar to extra trees regression but used for classification
 
-•	Nearest Neighbors Classification
-o	Similar to nearest neighbors regressor but used for classification
+* Naïve Bayes Classification
+  * Uses the Bayes’ Theorem (i.e. assumes that the presence of a particular feature is unrelated to the presence of any other feature)
 
-•	Multi-layer Perceptron Classification
-o	A feedforward artificial neural network mode that maps sets of input data onto a set of appropriate outputs.
+* Gradient Boosting Classification
+  * A machine learning method that produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+
+* Nearest Neighbors Classification
+  * Similar to nearest neighbors regressor but used for classification
+
+* Multi-layer Perceptron Classification
+  * A feedforward artificial neural network mode that maps sets of input data onto a set of appropriate outputs.
 
 The dataset was randomly spilt into 70% for training and 30% for testing. The class labels were defined as follows:
-Class 0: Number of Checkouts >= 1 and <= 50
-Class 1: Number of Checkouts >=51 and <= 100
-Class 2: Number of Checkouts >= 101 and <= 150
-Class 3: Number of Checkouts >=151
+
+* Class 0: Number of Checkouts >= 1 and <= 50
+* Class 1: Number of Checkouts >=51 and <= 100
+* Class 2: Number of Checkouts >= 101 and <= 150
+* Class 3: Number of Checkouts >=151
+
 A cross validation using the Stratified Shuffle Split method was performed on the dataset for each model using a training sample size of 50% and a testing sample size of 50% with 10 splits.
 
-Classification Modeling – Categorical Feature Set
+## Classification Modeling – Categorical Feature Set
+
 As in the case of Regression modeling, feature correlation was carried out to determine if any features had a high correlation with one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+
 For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted.
 
 
 
-Classification Modeling Summary – Categorical Feature Set
-		Logistic	Decision Tree	Random Forest	Extra Trees	Naïve Bayes	Nearest Neighbors	Gradient Boosting	Multi-Layer Perceptron
+### Classification Modeling Summary – Categorical Feature Set
+Metric | Logistic | Decision Tree | Random Forest | Extra Trees | Naïve Bayes | Nearest Neighbors | Gradient Boosting | Multi-Layer Perceptron
+------ | -------- | ------------- | ------------- | ----------- | ----------- | ----------------- | ----------------- | ---------------------
 Accuracy	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
 F1 (macro)	0.560579	0.642804	0.670351	0.701782	0.371971	0.413859	0.651137	0.630989
 F1 (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
