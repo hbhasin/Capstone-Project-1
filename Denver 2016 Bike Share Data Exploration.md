@@ -44,14 +44,13 @@ There were 6574 rows in the Trips dataset that had kiosk names not in the Kiosk 
 
 Removing the 9,954 rows with a trip duration of 1 minute and 6574 rows with invalid kiosk names resulted in **394,431 Denver B-cycle rides in 2016**.
 
-#### Distance Traveled
+### Distance Traveled
 To estimate the distance between checkout and return kiosks when they are the same, Tyler’s method of using the “average speed of all the other rides (nominal distance ridden divided by the duration), and then applying this average speed to the same-kiosk trip durations” was adopted. This resulted in **670,802 miles ridden in 2016**.
 
 ### Most Popular and Least Popular Checkout and Return Kiosks 
 ### Most Popular 
 The following ten kiosks were the most popular checkout kiosks by number of total bike checkouts in 2016.
 
-<p align="center">
 Checkout Kiosk | Number of Checkouts
 -------------- | -------------------
 16th & Wynkoop | 11,174
@@ -64,11 +63,9 @@ Checkout Kiosk | Number of Checkouts
 13th & Speer | 8,228
 REI	 | 8,218
 16th & Little Raven | 8,198
-</p>
 
 The following ten kiosks were the most popular return kiosks by number of total bike checkouts in 2016.
 
-<p align="center">
 Return Kiosk | Number of Checkouts
 ------------ | -------------------
 16th & Wynkoop | 11,289
@@ -81,7 +78,6 @@ Return Kiosk | Number of Checkouts
 REI | 8,284
 13th & Speer | 8,272
 16th & Little Raven | 8,267
-</p>
 
 ### Least Popular 
 The following ten kiosks were the least popular checkout kiosks by number of total bike checkouts in 2016.
@@ -272,4 +268,85 @@ Wednesday | 2016-03-23 | 43.070 | 22.040 | 18
 Sunday | 2016-12-18 | 19.640 | -6.220 | 17
 Saturday | 2016-12-17 | 5.490 | -7.220 | 16
 
+## Checkouts vs. Hourly Weather Variables
+Hourly weather conditions provide better resolution than daily weather conditions. To investigate this, number of checkouts against hourly weather variables were also plotted and compared with the plots using daily weather variables.
+
+### Checkouts vs. Hourly Temperature
+The scatter plots in Figure 15 and 16 show that the relationship between the number of checkouts and the hourly temperatures are not linear.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2015.PNG)
+
+<p align="center">
+FIGURE 15: TOTAL CHECKOUTS BY HOURLY TEMPERATURE IN 2016
+</p>
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2016.PNG)
+
+<p align="center">
+FIGURE 16: TOTAL CHECKOUTS BY HOURLY APPARENT TEMPERATURE IN 2016
+</p>
+
+### Checkouts vs. Hourly Humidity
+Figure 17 shows that humidity affects ridership significantly.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2017.PNG)
+
+<p align="center">
+FIGURE 17: TOTAL CHECKOUTS BY HOURLY HUMIDITY IN 2016	
+</p>
+
+### Checkouts vs. Hourly Cloud Cover
+As shown in Figure 18 Cloud Cover certainly impacts ridership.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2018.PNG)
+
+<p align="center">
+FIGURE 18: TOTAL CHECKOUTS BY HOURLY CLOUD COVER IN 2016	
+</p>
+
+### Checkouts vs. Hourly Wind Speed
+Data on wind speed indicates it is clustered heavily in 0 to 8 miles per hour range, as shown in Figure 19.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2019.PNG)
+
+<p align="center">
+FIGURE 19: TOTAL CHECKOUTS BY HOURLY WIND SPEED IN 2016	
+</p>
+
+### Checkouts vs. Hourly Visibility
+As shown in Figure 20 visibility at 10 miles has the greatest impact on ridership.
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2020.PNG)
+
+<p align="center">
+FIGURE 20: TOTAL CHECKOUTS BY HOURLY VISIBILITY IN 2016	
+</p>
+
+# Part 2: Regression Modeling 
+
+In his study, Tyler attempted to create a linear regression model using a number of calendar and weather variables. Using temperature, temperature squared, humidity, month, weekday, hour of day, holiday and cloud cover as input variables he arrived at an R squared value of 0.7382 which meant that approximately 73.8% of the variation in the hourly ridership could be explained by the selected variables and the linear model he used to fit the data.
+In this section various linear and non-linear regression models were used to test and train the Trips data that was merged with the weather data to try to predict the number of checkouts based on weather conditions.
+The following regression models with their brief explanation were used in this study:
+	
+•	Linear Regression
+o	Most widely used statistical and machine learning technique to model relationship between two sets of variables typically using a straight line. Simple to use and fast performance but lacks high accuracy when compared to non-linear models.
+•	Lasso Regression
+o	A type of linear regression that uses shrinkage to reduce data values toward the mean. Well suited for automating feature selection.
+•	Ridge Regression
+o	Well suited for data that suffers from multicollinearity, i.e. features with high correlation.
+•	Bayesian Ridge Regression
+o	An approach to linear regression in which the statistical analysis is undertaken using Bayesian inference.
+•	Decision Tree Regression
+o	Uses a tree like structure to derive a final decision on the outcome of the analysis.
+•	Random Forest Regression
+o	An ensemble learning method that operates by constructing a multitude of decision trees to arrive at the mean prediction.
+•	Extra Trees Regression
+o	An extremely randomized tree regressor. Builds a totally random decision tree.
+
+•	Nearest Neighbors Regression
+o	A simple algorithm that uses a similarity measure (e.g. distance between neighbors) to predict the outcome.
+
+## Regression Modeling with Categorical Feature Set
+The Checkout Month, Week Day and Hour numeric variables were converted to categorical features resulting in 45 total features for regression modeling.
+Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
