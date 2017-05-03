@@ -34,7 +34,12 @@ In particular, the “Not Applicable” membership type accounted for more than 
 
 Also over 2.3% of the Denver B-cycle rides (9,954 rides) had the same checkout station as return station with a trip duration of only 1 minute (Figure 1). Again, Tyler’s explanation of why these trips should be removed from the dataset makes sense - “I believe these should be filtered out because I believe the majority of these “rides” are likely people checking out a bike, and then deciding after a very short time that this particular bike doesn’t work for them. I believe that most of the same-kiosk rides under 5 minutes or so likely shouldn’t count, but only culled the ones that were one minute long”.
 
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
 
+<!--To center an image-->
+<p align="center">
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
+</p>
 FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME
 
 There were 6574 rows in the Trips dataset that had kiosk names not in the Kiosk Master List. These 6574 rows were removed accordingly.
