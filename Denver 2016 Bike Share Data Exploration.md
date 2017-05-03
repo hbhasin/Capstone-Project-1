@@ -479,21 +479,23 @@ For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), P
 ### Classification Modeling Summary – Categorical Feature Set
 Metric | Logistic | Decision Tree | Random Forest | Extra Trees | Naïve Bayes | Nearest Neighbors | Gradient Boosting | Multi-Layer Perceptron
 ------ | -------- | ------------- | ------------- | ----------- | ----------- | ----------------- | ----------------- | ---------------------
-Accuracy	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
-F1 (macro)	0.560579	0.642804	0.670351	0.701782	0.371971	0.413859	0.651137	0.630989
-F1 (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
-Precision (macro)	0.622020	0.636731	0.710195	0.710991	0.440307	0.497978	0.682317	0.676773
-Precision (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
-Recall (macro)	0.538820	0.650152	0.646257	0.694738	0.515025	0.411259	0.630477	0.614739
-Recall (micro)	0.728070	0.730119	0.786062	0.806043	0.457115	0.639864	0.756335	0.791423
-Cross Validation	0.718655	0.722281	0.777895	0.797076	0.448012	0.624035	0.748538	0.750175
-Execution Time (sec)	14.137227	0.304386	3.665370	3.346657	0.179008	0.977846	108.952438	9.298618
+Accuracy | 0.728070 | 0.730119 | 0.786062 | 0.806043 | 0.457115 | 0.639864 | 0.756335 | 0.791423
+F1 (macro) | 0.560579 | 0.642804 | 0.670351 | 0.701782 | 0.371971 | 0.413859 | 0.651137 | 0.630989
+F1 (micro) | 0.728070 | 0.730119 | 0.786062 | 0.806043 | 0.457115 | 0.639864 | 0.756335 | 0.791423
+Precision (macro) | 0.622020 | 0.636731 | 0.710195 | 0.710991 | 0.440307 | 0.497978 | 0.682317 | 	0.676773
+Precision (micro) | 0.728070 | 0.730119 | 0.786062 | 0.806043 | 0.457115 | 0.639864 | 0.756335 | 0.791423
+Recall (macro) | 0.538820 | 0.650152 | 0.646257 | 0.694738 | 0.515025 | 0.411259 | 0.630477 | 0.614739
+Recall (micro) | 0.728070 | 0.730119 | 0.786062 | 0.806043 | 0.457115 | 0.639864 | 0.756335 | 0.791423
+Cross Validation | 0.718655 | 0.722281 | 0.777895 | 0.797076 | 0.448012 | 0.624035 | 0.748538 | 0.750175
+Execution Time (sec) | 14.137227 | 0.304386 | 3.665370 | 3.346657 | 0.179008 | 0.977846 | 108.952438 | 9.298618
 
 The Extra Trees model attained the highest accuracy in classifying the four classes. The Naïve Bayes model performed the poorest.
 
-Classification Modeling – Numerical Feature Set
+## Classification Modeling – Numerical Feature Set
 Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 total features for regression modeling.
+
 As in the case of Regression modeling, feature correlation was carried out to determine if any features had a high correlation with one another. As shown in Figure 22, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+
 For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest, Extra Trees and Gradient Boosting models also had their Feature Importance bar charts plotted. The chart for the Gradient Boosting model is shown in Figure 25.
 
 
