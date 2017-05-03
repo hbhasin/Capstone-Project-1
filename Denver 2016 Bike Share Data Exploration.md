@@ -48,7 +48,8 @@ To estimate the distance between checkout and return kiosks when they are the sa
 ### Most Popular 
 The following ten kiosks were the most popular checkout kiosks by number of total bike checkouts in 2016.
 
-Checkout Kiosk|	Number of Checkouts
+Checkout Kiosk | Number of Checkouts
+-------------- | -------------------
 16th & Wynkoop | 11,174
 16th & Broadway |	3,565
 1350 Larimer | 10,837
