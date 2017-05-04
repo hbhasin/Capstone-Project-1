@@ -566,6 +566,12 @@ This study covered three areas:
 
 1. Explored the Trips datasets and visualized the data and provided useful and interesting information.
 2. Deployed a variety of supervised machine learning regression models to predict the number of checkouts using calendar, clock and weather attributes.
-3. Deployed a variety of supervised machine learning classification models to predict the number of checkouts using calendar, clock and weather attributes.
+3. Deployed a variety of supervised machine learning classification models to predict four classes reflecting the number of checkouts using calendar, clock and weather attributes.
 
+## Next Steps
+
+* Provide and/or present findings to Denver B-cycle executives to improve future ridership
+* Develop a simple desktop, web or mobile app that takes calendar, clock and weather variables as inputs and predicts the number of checkouts as the output.
+* Undertake similar project for Boulder B-cycle
+* Longmont, CO has just introduced its bike sharing system – this study could be useful to the management.
 
