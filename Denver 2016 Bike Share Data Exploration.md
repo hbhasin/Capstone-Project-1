@@ -539,7 +539,8 @@ Both the Random Forest and the Extra Trees classifiers achieved the highest accu
 
 ## Testing Classifier on unseen samples
 The Random Forest Classifier with a predictive accuracy of 79.3% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The classifier predicted 8 of the 10 samples accurately. Of the remaining 2 samples, it predicted one class below the actual class in both samples.
- 
+
+
 Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of Checkouts | Class Number
 ------------- | -------------------------- | ------------ | ----------------------------- | ------------
 1 | Between 51 and 100 | 1 | Between 51 and 100 | 1
