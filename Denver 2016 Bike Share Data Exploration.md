@@ -418,17 +418,17 @@ Regression Modeling Summary
 
 Testing Regressor on unseen samples
 The Random Forest Regressor with a predictive accuracy of 92.4% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The regressor predicted 1 of the 10 samples accurately. Of the remaining 9 samples, it predicted well within the 7.6% range based on its accuracy on 8 samples.
-Sample Number	Actual Number of Checkouts	Predicted Number of Checkouts	+/-
-1	92	96	+4
-2		12	13	+1
-3	55	56	+1
-4	111	112	+1
-5	76	72	-4
-6	41	37	-4
-7	8	14	+6
-8	81	99	+18
-9	65	64	-1
-10		14	14	0
+Sample Number | Actual Number of Checkouts | Predicted Number of Checkouts | +/-
+------------- | -------------------------- | ----------------------------- | ---
+92 | 96 | +4
+2 | 12 | 13 | +1
+3 | 55 | 56 | +1
+4 | 111 | 112 | +1
+5 | 76 | 72 | -4
+6 | 41 | 37 | -4
+7 | 8 | 14 | +6
+8 | 81 | 99 | +18
+9 | 65 | 64 | -1
 
 # Part 3: Classification Modeling 
 In this section various classification models were used to test and train the Trips data that was merged with the weather data to try to predict the checkout hour based on weather conditions.
@@ -498,5 +498,60 @@ As in the case of Regression modeling, feature correlation was carried out to de
 
 For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest, Extra Trees and Gradient Boosting models also had their Feature Importance bar charts plotted. The chart for the Gradient Boosting model is shown in Figure 25.
 
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2025.PNG)
+
+<p align="center">
+FIGURE 25: GRADIENT BOOSTING CLASSIFICATION MODEL FEATURE IMPORTANCE CHART
+</p>
+
+## Classification Modeling Summary – Numerical Feature Set
+Metric | Logistic | Decision Tree | Random Forest | Extra Trees | Naïve Bayes | Nearest Neighbors | Gradient Boosting | Multi-Layer Perceptron
+------ | -------- | ------------- | ------------- | ----------- | ----------- | ----------------- | ----------------- | ---------------------
+Accuracy | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.760234 | 0.687135
+F1 (macro) | 0.341939 | 0.629112 | 0.675405 | 0.684538 | 0.384729 | 0.463753 | 0.647997 | 0.437630
+F1 (micro) | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.688109 | 0.687135
+Precision (macro) | 0.311641 | 0.625842 | 0.732482 | 0.727647 | 0.395476 | 0.543086 | 0.658037 | 0.457347
+Precision (micro) | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.688109 | 0.687135
+Recall (macro) | 0.380207 | 0.632630 | 0.646895 | 0.657962 | 0.411507 | 0.458458 | 0.639805 | 0.446176
+Recall (micro) | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.688109 | 0.687135
+Cross Validation | 0.642573 | 0.727544 | 0.782407 | 0.778772 | 0.526725 | 0.684503 | 0.757427 | 0.664971
+Execution Time (sec) | 12.288280 | 0.190748 | 4.000826 | 3.295505 | 0.096340 | 0.941100 | 60.454736 | 3.061440
+
+Both the Random Forest and the Extra Trees classifiers achieved the highest accuracy and the Naïve Bayes the lowest. The cross validation test accuracy were comparable to the F1 (micro), Precision (micro) and the Recall (micro) accuracies.
+
+## Classification Modeling Summary
+* The multi-layer perceptron model attained the highest accuracy in classifying the four classes using the categorical feature set. The Naïve Bayes model performed the poorest.
+
+* The Gradient Boosting Classifier achieved the highest accuracy and the Naïve Bayes the lowest with the numerical feature set. While the Multi-Layer Perceptron model had better accuracy than the Gradient Boosting with the categorical feature set it did not fare as well in the numerical feature set.
+
+* None of the models used in this study were not able to achieve an accuracy greater than 71% either with the categorical or the numerical feature set.
+
+* The non-linear regression models performed better than the linear models. In particular, even with a reduced feature set, the non-linear models such as the Random Forest and the Extra Trees were the best performers with R Squared values well above 0.9.
+
+## Testing Classifier on unseen samples
+The Random Forest Classifier with a predictive accuracy of 79.3% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The classifier predicted 8 of the 10 samples accurately. Of the remaining 2 samples, it predicted one class below the actual class in both samples.
+ 
+Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of Checkouts | Class Number
+------------- | -------------------------- | ------------ | ----------------------------- | ------------
+1 | Between 51 and 100 | 1 | Between 51 and 100 | 1
+2 | Between 1 and 50 | 0 | Between 1 and 50 | 0
+3 | Between 51 and 100 | 1 | Between 1 and 50 | 0
+4 | Between 101 and 150 | 2 | Between 101 and 150 | 2
+5 | Between 51 and 100 | 1 | Between 51 and 100 | 1
+6 | Between 1 and 50 | 0 | Between 1 and 50 | 0
+7 | Between 1 and 50 | 0 | Between 1 and 50 | 0
+8 | Between 51 and 100 | 1 | Between 1 and 50 |0	
+9 | Between 51 and 100 | 1 | Between 51 and 100 | 1
+10 | Between 1 and 50 | 0 | Between 1 and 50 | 0
+
+# Summary
+
+This in-depth study on Denver 2016 Bike Share Trips data was undertaken to continue the work that Tyler started on the 2014 data. It agrees with his findings that by merging calendar, clock and weather attributes into the Trips dataset can reveal ridership patterns and allow regression and classification techniques to be applied for prediction purposes.
+
+This study covered three areas:
+
+1. Explored the Trips datasets and visualized the data and provided useful and interesting information.
+2. Deployed a variety of supervised machine learning regression models to predict the number of checkouts using calendar, clock and weather attributes.
+3. Deployed a variety of supervised machine learning classification models to predict the number of checkouts using calendar, clock and weather attributes.
 
 
