@@ -548,7 +548,7 @@ Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of 
 5 | Between 51 and 100 | 1 | Between 51 and 100 | 1
 6 | Between 1 and 50 | 0 | Between 1 and 50 | 0
 7 | Between 1 and 50 | 0 | Between 1 and 50 | 0
-8 | Between 51 and 100 | 1 | Between 1 and 50 | 0	
+8 | Between 51 and 100 | 1 | Between 1 and 50 | 0
 9 | Between 51 and 100 | 1 | Between 51 and 100 | 1
 10 | Between 1 and 50 | 0 | Between 1 and 50 | 0
 
