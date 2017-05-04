@@ -11,7 +11,7 @@ The following project files are located in this project directory:
 
 [Denver 2016 Bike Share Capstone Project Proposal](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Capstone%20Project%20Proposal.pdf) - Project Proposal.
 
-[Denver 2016 Bike Share Data Exploration.pdf](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Data%20Exploration.pdf) - Final Project Report.
+[Denver 2016 Bike Share Data Exploration.md](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Data%20Exploration.md) - Final Project Report.
 
 [Denver 2016 B-cycle](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20B-cycle.pdf) - Slide Deck.
 
@@ -25,11 +25,11 @@ The following project files are located in this project directory:
 
 [Denver 2016 Bike Share Weather Data Consolidation](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Weather%20Data%20Consolidation.ipynb) - Merges the daily and hourly weather attributes from [Dark Sky API](https://darksky.net/dev/) into the Trips dataset.
 
-[Denver 2016 Bike Share - Data Wrangling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20-%20Data%20Wrangling.ipynb) - Data Wrangling Notebook.
+[Denver 2016 Bike Share Data Exploration](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Data%20Exploration.ipynb) - Jupyter notebook containing Python code used to explore and visualize the information contained in the Denver 2016 Trips dataset. 
 
-[Denver 2016 Bike Share Regression Modeling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Regression%20Modeling.ipynb) - Regression Modeling Notebook.
+[Denver 2016 Bike Share Regression Modeling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Regression%20Modeling.ipynb) - Jupyter notebook containing Python code used to deploy a variety of regression models to train and test the Trips dataset followed by a predcition on 10 unseen samples. The regression models include Linear, Lasso, Ridge, Bayesian Ridge, Decision Tree, Random Forest, Extra Trees and Nearest Neighbors. 
 
-[Denver 2016 Bike Share Multi-Class Classification Modeling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Multi-Class%20Classification%20Modeling.ipynb) - Multi-Class Classification Modeling Notebook.
+[Denver 2016 Bike Share Multi-Class Classification Modeling](https://github.com/hbhasin/Capstone-Project-1/blob/master/Denver%202016%20Bike%20Share%20Multi-Class%20Classification%20Modeling.ipynb) - Jupyter notebook containing Python code used to deploy a variety of classification models to train and test the Trips dataset followed by a predcition on 10 unseen samples. The classification models include Logistic, Decision Tree, Random Forest, Extra Trees, Naive Bayes, Nearest Neighbors, Gradient Boosting and Multi-Layer Perceptron.
 
 [./data](https://github.com/hbhasin/Capstone-Project-1/tree/master/data) - Folder containing data files used in the Python scripts and in the notebooks.
 
