@@ -4,7 +4,7 @@
 
 [Denver B-cycle](https://denver.bcycle.com/) is a non-profit public bike sharing organization operating an automated bike sharing system called Denver B-cycle. Its mission is to "serve as a catalyst to fundamentally transform public thinking and behavior by operating a bike sharing system in Denver to enhance mobility while promoting all aspects of sustainability: quality of life, equity, the environment, economic development, and public health" its purpose, its organization and discuss its relevance to this exploration.
 
-Denver B-cycle posts its trips data set on its website as soon as its annual report is released. Trips data have been available since 2010. The 2016 annual report and its associated dataset for this report were obtained from [Denver B-Cycle website.](https://denver.bcycle.com/). The original plan was to use the 2015 dataset to continue the effort by Tyler Byler who published a report, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/). In his study Tyler indicated that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. The original plan for this report was to use 2015 data to continue Tyler’s work. However, the 2016 data became available at the end of February 2017, so gears had to be rapidly shifted to use this data instead. To this end, the reporting style will follow Tyler's study to provide seamless continuity and good reference on trends and analyses.
+Denver B-cycle posts its trips data set on its website as soon as its annual report is released. Trips data have been available since 2010. The 2016 annual report and its associated dataset for this report were obtained from [Denver B-Cycle website.](https://denver.bcycle.com/). The original plan was to use the 2015 dataset to continue the effort by Tyler Byler who published a report, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/). In his study Tyler indicated that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. However, the 2016 data became available at the end of February 2017, so gears had to be rapidly shifted to use this data instead. To this end, the reporting style will follow Tyler's study to provide seamless continuity and good reference on trends and analyses.
 
 This study has three parts:
 1.	Explore the Trips datasets and visualize the data to provide useful and interesting information.
@@ -250,7 +250,7 @@ Another interesting data discovery was the fact that Saturdays and Sundays had t
 
 ### Highest Ridership
 
-Checkout Week Day | Number of Checkouts | Max Temperature | Min Temperature | Number of Checkouts
+Checkout Week Day | Date of Checkout | Max Temperature | Min Temperature | Number of Checkouts
 ----------------- | ------------------- | --------------- | --------------- | -------------------
 Sunday | 2016-05-29 | 71.090 | 44.100 | 2,100
 Saturday | 2016-05-28 | 65.650 | 40.330 | 1,990
@@ -265,7 +265,7 @@ Friday | 2016-09-02 | 79.770 | 59.500 | 1,855
 
 ### Lowest Ridership
 
-Checkout Week Day | Number of Checkouts | Max Temperature | Min Temperature | Number of Checkouts
+Checkout Week Day | Date of Checkout | Max Temperature | Min Temperature | Number of Checkouts
 ----------------- | ------------------- | --------------- | --------------- | -------------------
 Saturday | 2016-12-24 | 50.960 | 28.940 | 154
 Sunday | 2016-04-17 | 34.710 | 30.140 | 140
