@@ -149,9 +149,11 @@ It appears that the highest number of checkouts occur between 4 PM and 5 PM with
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%205.PNG)
 
+
 <p align="center">
 FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016
 </p>
+
 
 
 Figure 6 shows the average distance ridden by the hour of the day in 2016. More distance is covered during the 10 AM period and declining steadily after 3 PM.
