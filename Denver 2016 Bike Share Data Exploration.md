@@ -107,13 +107,14 @@ FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016
 </p>
 
 ### Return Kiosks 
-Similarly, the use of Tableau aided in the creation of the following map showing the popularity of the various Return Kiosks (Figure 3). The size of the circle corresponds to the number of checkouts returned to that kiosk in 2016. 
+Similarly, the use of Tableau aided in the creation of the following map showing the popularity of the various Return Kiosks (Figure 3). The size of the circle corresponds to the number of checkouts returned to that kiosk in 2016.
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Returns_By_Return_Kiosks.JPG)
 
 <p align="center">
 FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
 </p>
+
 
 ## Checkouts per Membership Type 
 Denver B-cycle has a number of different membership passes. The following were the top ten by number of checkouts in 2016 (Figure 4).
@@ -131,11 +132,13 @@ Republic Rider (Annual) (Boulder B-cycle) | 5,930
 Flex Pass (Denver B-cycle) | 3,507
 Republic Rider (Boulder B-cycle) | 1,229
 
+
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Membership%20Type%20Breakdown.PNG)
 
 <p align="center">
 FIGURE 4: NUMBER OF CHECKOUTS BY MEMBERSHIP TYPE IN 2016
 </p>
+
 
 ## Ridership by Calendar and Clock Variables 
 ### Ridership by Hour 
@@ -149,6 +152,7 @@ It appears that the highest number of checkouts occur between 4 PM and 5 PM with
 FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016
 </p>
 
+
 Figure 6 shows the average distance ridden by the hour of the day in 2016. More distance is covered during the 10 AM period and declining steadily after 3 PM.
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%206.PNG)
@@ -156,6 +160,7 @@ Figure 6 shows the average distance ridden by the hour of the day in 2016. More 
 <p align="center">
 FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016
 </p>
+
 
 ## Ridership by Hour and Weekday 
 Figure 7 shows that weekday ridership patterns are similar. On the other hand weekend ridership demonstrate a busy afternoon (between 12 PM and 3 PM)
@@ -191,11 +196,13 @@ FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016
 
 Apparent temperature, as defined by Dark Sky, is “apparent (or “feels like”) temperature in degrees Fahrenheit”. It appears to have a subtle effect on bike ridership as shown in Figure 10.
 
+
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2010.PNG)
 
 <p align="center">
 FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016
 </p>
+
 
 ## Checkouts vs. Daily Cloud Cover 
 Dark Sky defines Cloud Cover as “the percentage of sky occluded by clouds, between 0 and 1, inclusive”. Figures 11 shows the total number of checkouts against daily cloud cover. They clearly suggest that ridership is highest as the cloud cover stays at around 0.15.
@@ -272,7 +279,9 @@ Hourly weather conditions provide better resolution than daily weather condition
 ### Checkouts vs. Hourly Temperature
 The scatter plots in Figure 15 and 16 show that the relationship between the number of checkouts and the hourly temperatures are not linear.
 
+<p align="center">
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2015.PNG)
+</p>
 
 <p align="center">
 FIGURE 15: TOTAL CHECKOUTS BY HOURLY TEMPERATURE IN 2016
