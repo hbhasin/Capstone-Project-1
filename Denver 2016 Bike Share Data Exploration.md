@@ -397,6 +397,7 @@ Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 tot
 
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 23, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
+
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2023.PNG)
 
 <p align="center">
@@ -556,7 +557,7 @@ Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of 
 
 # Summary
 
-This in-depth study on Denver 2016 Bike Share Trips data was undertaken to continue the work that Tyler started on the 2014 data. It agrees with his findings that by merging calendar, clock and weather attributes into the Trips dataset can reveal ridership patterns and allow regression and classification techniques to be applied for prediction purposes.
+This in-depth study on Denver 2016 Bike Share Trips data was undertaken to continue the work that Tyler started on the 2014 data. It agrees with his findings that merging calendar, clock and weather attributes into the Trips dataset can reveal ridership patterns and allow regression and classification techniques to be applied for prediction purposes.
 
 This study covered three areas:
 
