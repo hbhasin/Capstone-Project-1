@@ -8,8 +8,8 @@ Denver B-cycle posts its trips data set on its website as soon as its annual rep
 
 This study has three parts:
 1.	Explore the Trips datasets and visualize the data to provide useful and interesting information.
-2.	Deploy a variety of regression models to train and test the data.
-3.	Deploy a variety of classification models to train and test the data.
+2.	Deploy a variety of regression models to train and test the data followed by a prediction on 10 unseen samples.
+3.	Deploy a variety of classification models to train and test the data followed by a prediction on 10 unseen samples.
 
 # Part 1: Data Exploration
 
