@@ -426,6 +426,7 @@ RMSE | 1142.475 | 1144.818 | 1144.818 | 1143.319 | 534.800 | 302.172 | 334.397 |
 
 ## Testing Regressor on unseen samples
 The Random Forest Regressor with a predictive accuracy of 92.4% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The regressor predicted 1 of the 10 samples accurately. Of the remaining 9 samples, it predicted well within the 7.6% range based on its accuracy on 8 samples.
+
 Sample Number | Actual Number of Checkouts | Predicted Number of Checkouts | +/-
 ------------- | -------------------------- | ----------------------------- | ---
 1 | 92 | 96 | +4
