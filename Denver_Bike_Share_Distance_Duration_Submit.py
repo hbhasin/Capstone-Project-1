@@ -22,13 +22,13 @@ result = []
 
 with open("Denver_Bike_Kiosks_Distances_Durations.csv", "w", newline='') as f:
   writer = csv.writer(f)
-  x = ["CheckoutStation", "CheckoutStationLatitude", "CheckoutStationLongitude",
+  colNames = ["CheckoutStation", "CheckoutStationLatitude", "CheckoutStationLongitude",
       "ReturnStation", "ReturnStationLatitude", "ReturnStationLongitude",
       "Distance_Checkout_Return", "Duration_Checkout_Return",
       "Distance_Return_Checkout", "Duration_Return_Checkout", "Average_Distance",
       "Average_Duration"]
-  writer.writerow(x)
-  for StationRow in Bike_list[7817:7818]:
+  writer.writerow(colNames)
+  for StationRow in Bike_list[1:7921]:
     origins = StationRow[1] + "," + StationRow[2]
     destinations = StationRow[4] + "," + StationRow[5]
     gmaps = googlemaps.Client(key='provide your key here')
@@ -42,8 +42,6 @@ with open("Denver_Bike_Kiosks_Distances_Durations.csv", "w", newline='') as f:
     #print(result1)
     origins = StationRow[4] + "," + StationRow[5]
     destinations = StationRow[1] + "," + StationRow[2]
-    #gmaps = googlemaps.Client(key='AIzaSyBIY7z-qzOMlU1aUTUAYjeko54Z_1aLxu0') #key for original email    
-    #gmaps = googlemaps.Client(key='AIzaSyBAKaEo9P68K0EPHpQZ610fS5oHGNISmXw') #key for other email
     matrix = gmaps.distance_matrix(origins, destinations, mode="bicycling", units="imperial", avoid="highways")
     print(matrix)
     cycling_distance = matrix['rows'][0]['elements'][0]['distance']['value']
