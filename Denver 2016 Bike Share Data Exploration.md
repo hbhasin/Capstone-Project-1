@@ -30,9 +30,33 @@ Data for this study was downloaded from several sources and combined using the f
 The B-cycle data, as downloaded, contained 419,611 rows of trips data. Under normal circumstances this would mean that 419,611 B-cycle trips were taken in 2016. However, the [2016 Denver B-cycle annual report](http://denver.bcycle.com/docs/librariesprovider34/default-document-library/dbs_annualreport_2016_05.pdf) acknowledged 354,652 total trips for the year. The breakdown was as follows:
 
 Membership Type | Number of Trips
------------- | -------------
+--------------- | -------------
 Annual (And Annual Plus) | 193,113
 Flex Pass | 3,565
+30 Day | 54,004
+24 hour online | 117
+24-hour Kiosk | 103,853
+**Total Trips** | **354,652**
+
+The Trips dataset reported the following breakdown:
+
+Membership Type | Number of Trips
+--------------- | -------------
+Annual (Denver B-cycle) | 82,199
+Annual Plus (Denver B-cycle) | 84,271
+Flex Pass | 3,565
+Monthly (Denver B-cycle) | 54,004
+24 hour online (Denver B-cycle) | 117
+24-hour Kiosk Only (Denver B-cycle) | 87,315
+**Total Trips** | **311,471**
+
+There were several other Membership Types that were also listed under “Denver B-cycle” in the User’s Program:
+
+Membership Type | Number of Trips
+--------------- | -------------
+Denver B-cycle Founder (Denver B-cycle) | 18,003
+Not Applicable | 64,959
+Single Ride (Denver B-cycle) | 16,526
 
 In particular, the “Not Applicable” membership type accounted for more than 15% of the 
 419,611 trips. Perhaps some of these trips were used in the Denver B-cycle annual report.
