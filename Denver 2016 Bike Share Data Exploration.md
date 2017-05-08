@@ -1,10 +1,15 @@
 # Denver 2016 B-cycle Ridership Data Exploration
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/data/Denver%20B-cycle.PNG)
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Splash.PNG)
 
 [Denver B-cycle](https://denver.bcycle.com/) is a non-profit public bike sharing organization operating an automated bike sharing system called Denver B-cycle. Its mission is to "serve as a catalyst to fundamentally transform public thinking and behavior by operating a bike sharing system in Denver to enhance mobility while promoting all aspects of sustainability: quality of life, equity, the environment, economic development, and public health".
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Denver%20Bikes.PNG)
 
-Denver B-cycle posts its trips data set on its website as soon as its annual report is released. Trips data have been available since 2010. The 2016 annual report and its associated dataset for this report were obtained from [Denver B-Cycle website](https://denver.bcycle.com/). The original plan was to use the 2015 dataset to continue the effort by Tyler Byler who published a report, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/). In his study Tyler indicated that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. However, the 2016 data became available at the end of February 2017, so gears had to be rapidly shifted to use this data instead. To this end, the reporting style will follow Tyler's study to provide seamless continuity and good reference on trends and analyses.
+Denver B-cycle posts its trips data set on its website as soon as its annual report is released. Trips data have been available since 2010. The 2016 annual report and its associated dataset for this report were obtained from [Denver B-Cycle website](https://denver.bcycle.com/). 
+
+![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Denver%202016%20Annual%20Report.PNG)
+
+The original plan was to use the 2015 dataset to continue the effort by Tyler Byler who published a report, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/). In his study Tyler indicated that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. However, the 2016 data became available at the end of February 2017, so gears had to be rapidly shifted to use this data instead. To this end, the reporting style will follow Tyler's study to provide seamless continuity and good reference on trends and analyses.
 
 This study has three parts:
 1.	Explore the Trips datasets and visualize the data to provide useful and interesting information.
