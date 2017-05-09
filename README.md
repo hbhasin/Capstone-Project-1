@@ -1,4 +1,3 @@
-## Capstone-Project-1
 # Denver 2016 Bike Share
 
 ## Project Summary
