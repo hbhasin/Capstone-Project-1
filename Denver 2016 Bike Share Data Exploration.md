@@ -1,4 +1,4 @@
-# Denver 2016 B-cycle Ridership Data Exploration
+# Denver 2016 B-cycle Ridership Data Exploration and Predictive Analytics
 
 ![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Splash.PNG)
 
