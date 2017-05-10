@@ -138,7 +138,7 @@ FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016
 ### Return Kiosks 
 Similarly, the use of Tableau aided in the creation of the following map showing the popularity of the various Return Kiosks (Figure 3). The size of the circle corresponds to the number of checkouts returned to that kiosk in 2016.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Returns_By_Return_Kiosks.JPG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%203.PNG)
 
 <p align="center">
 FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
