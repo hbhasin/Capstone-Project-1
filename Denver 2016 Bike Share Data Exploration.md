@@ -129,7 +129,7 @@ Colfax & Gaylord | 1,421
 
 The use of Tableau aided in the creation of the following map showing the popularity of the various Checkout Kiosks (Figure 2). The size of the circle is proportional to the number of checkouts from that kiosk in 2016. 
 
-![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%202.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%202.PNG
 
 <p align="center">
 FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016
