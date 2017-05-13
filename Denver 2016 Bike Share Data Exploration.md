@@ -1,13 +1,13 @@
 # Denver 2016 B-cycle Ridership Data Exploration and Predictive Analytics
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Splash.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Splash.PNG)
 
 [Denver B-cycle](https://denver.bcycle.com/) is a non-profit public bike sharing organization operating an automated bike sharing system called Denver B-cycle. Its mission is to "serve as a catalyst to fundamentally transform public thinking and behavior by operating a bike sharing system in Denver to enhance mobility while promoting all aspects of sustainability: quality of life, equity, the environment, economic development, and public health".
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Denver%20Bikes.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Denver%20Bikes.PNG)
 
 Denver B-cycle posts its trips data set on its website as soon as its annual report is released. Trips data have been available since 2010. The 2016 annual report and its associated dataset for this report were obtained from [Denver B-Cycle website](https://denver.bcycle.com/). 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Denver%202016%20Annual%20Report.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Denver%202016%20Annual%20Report.PNG)
 
 The original plan was to use the 2015 dataset to continue the effort by Tyler Byler who published a report, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/). In his study Tyler indicated that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. However, the 2016 data became available at the end of February 2017, so gears had to be rapidly shifted to use this data instead. To this end, the reporting style will follow Tyler's study to provide seamless continuity and good reference on trends and analyses.
 
@@ -63,7 +63,7 @@ In particular, the “Not Applicable” membership type accounted for more than 
 
 Also over 2.3% of the Denver B-cycle rides (9,954 rides) had the same checkout station as return station with a trip duration of only 1 minute (Figure 1). Again, Tyler’s explanation of why these trips should be removed from the dataset makes sense - “I believe these should be filtered out because I believe the majority of these “rides” are likely people checking out a bike, and then deciding after a very short time that this particular bike doesn’t work for them. I believe that most of the same-kiosk rides under 5 minutes or so likely shouldn’t count, but only culled the ones that were one minute long”.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%201.PNG)
 
 <p align="center">
 FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME
@@ -163,7 +163,7 @@ Republic Rider (Boulder B-cycle) | 1,229
 
 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%204.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%204.PNG)
 
 
 <p align="center">
@@ -178,7 +178,7 @@ Bike checkout time is probably the most important attribute in the Trips dataset
 
 It appears that the highest number of checkouts occur between 4 PM and 5 PM with ridership increasing steadily from 10 AM onwards.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%205.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%205.PNG)
 
 
 <p align="center">
@@ -189,7 +189,7 @@ FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016
 
 Figure 6 shows the average distance ridden by the hour of the day in 2016. More distance is covered during the 10 AM period and declining steadily after 3 PM.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%206.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%206.PNG)
 
 <p align="center">
 FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016
@@ -199,7 +199,7 @@ FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016
 ## Ridership by Hour and Weekday 
 Figure 7 shows that weekday ridership patterns are similar. On the other hand weekend ridership demonstrate a busy afternoon (between 12 PM and 3 PM)
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%207.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%207.PNG)
 
 <p align="center">
 FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016
@@ -208,7 +208,7 @@ FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016
 ## Ridership by Month 
 Monthly checkouts, as shown in Figure 8, suggest high ridership during the summer months and low ridership during the winter months.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%208.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%208.PNG)
 
 <p align="center">
 FIGURE 8: TOTAL CHECKOUTS BY MONTH IN 2016
@@ -222,7 +222,7 @@ It is highly likely that weather plays a very important role in bike ridership a
 
 Figure 9 shows the total number of checkouts against maximum and minimum daily temperature. It clearly suggests that ridership increases as the temperature increases and vice-versa.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%209.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%209.PNG)
 
 <p align="center">
 FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016
@@ -231,7 +231,7 @@ FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016
 Apparent temperature, as defined by Dark Sky, is “apparent (or “feels like”) temperature in degrees Fahrenheit”. It appears to have a subtle effect on bike ridership as shown in Figure 10.
 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2010.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2010.PNG)
 
 <p align="center">
 FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016
@@ -241,7 +241,7 @@ FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016
 ## Checkouts vs. Daily Cloud Cover 
 Dark Sky defines Cloud Cover as “the percentage of sky occluded by clouds, between 0 and 1, inclusive”. Figures 11 shows the total number of checkouts against daily cloud cover. They clearly suggest that ridership is highest as the cloud cover stays at around 0.15.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2011.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2011.PNG)
 
 <p align="center">
 FIGURE 11: TOTAL CHECKOUTS BY DAILY CLOUD COVER IN 2016
@@ -250,7 +250,7 @@ FIGURE 11: TOTAL CHECKOUTS BY DAILY CLOUD COVER IN 2016
 ## Checkouts vs. Daily Wind Speed 
 Wind speed is reported in miles per hour. As shown in Figure 12, ridership does not seem to be somewhat impacted by higher wind speeds. 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2012.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2012.PNG)
 
 <p align="center">
 FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016
@@ -259,7 +259,7 @@ FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016
 ## Checkouts vs. Daily Humidity 
 Humidity is defined by Dark Sky as “relative humidity, between 0 and 1. Figure 13 shows decreased ridership at higher humidity levels.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2013.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2013.PNG)
 
 <p align="center">
 FIGURE 13: TOTAL CHECKOUTS BY DAILY HUMIDITY IN 2016	
@@ -268,7 +268,7 @@ FIGURE 13: TOTAL CHECKOUTS BY DAILY HUMIDITY IN 2016
 ## Checkouts vs. Daily Visibility 
 Visibility is measured in miles and capped at 10 miles, according to Dark Sky. As Figure 14 shows, ridership peaks when visibility is at 10 miles.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2014.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2014.PNG)
 
 <p align="center">
 FIGURE 14: TOTAL CHECKOUTS BY DAILY VISIBILITY IN 2016
@@ -313,13 +313,13 @@ Hourly weather conditions provide better resolution than daily weather condition
 ### Checkouts vs. Hourly Temperature
 The scatter plots in Figure 15 and 16 show that the relationship between the number of checkouts and the hourly temperatures are not linear.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2015.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2015.PNG)
 
 <p align="center">
 FIGURE 15: TOTAL CHECKOUTS BY HOURLY TEMPERATURE IN 2016
 </p>
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2016.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2016.PNG)
 
 <p align="center">
 FIGURE 16: TOTAL CHECKOUTS BY HOURLY APPARENT TEMPERATURE IN 2016
@@ -328,7 +328,7 @@ FIGURE 16: TOTAL CHECKOUTS BY HOURLY APPARENT TEMPERATURE IN 2016
 ### Checkouts vs. Hourly Humidity
 Figure 17 shows that humidity affects ridership significantly.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2017.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2017.PNG)
 
 <p align="center">
 FIGURE 17: TOTAL CHECKOUTS BY HOURLY HUMIDITY IN 2016	
@@ -337,7 +337,7 @@ FIGURE 17: TOTAL CHECKOUTS BY HOURLY HUMIDITY IN 2016
 ### Checkouts vs. Hourly Cloud Cover
 As shown in Figure 18 Cloud Cover certainly impacts ridership.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2018.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2018.PNG)
 
 <p align="center">
 FIGURE 18: TOTAL CHECKOUTS BY HOURLY CLOUD COVER IN 2016	
@@ -346,7 +346,7 @@ FIGURE 18: TOTAL CHECKOUTS BY HOURLY CLOUD COVER IN 2016
 ### Checkouts vs. Hourly Wind Speed
 Data on wind speed indicates it is clustered heavily in 0 to 8 miles per hour range, as shown in Figure 19.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2019.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2019.PNG)
 
 <p align="center">
 FIGURE 19: TOTAL CHECKOUTS BY HOURLY WIND SPEED IN 2016	
@@ -355,7 +355,7 @@ FIGURE 19: TOTAL CHECKOUTS BY HOURLY WIND SPEED IN 2016
 ### Checkouts vs. Hourly Visibility
 As shown in Figure 20 visibility at 10 miles has the greatest impact on ridership.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2020.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2020.PNG)
 
 <p align="center">
 FIGURE 20: TOTAL CHECKOUTS BY HOURLY VISIBILITY IN 2016	
@@ -398,7 +398,7 @@ The Checkout Month, Week Day and Hour numeric variables were converted to catego
 
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2021.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2021.PNG)
 
 <p align="center">
 FIGURE 21: FEATURE CORRELATIONS
@@ -408,7 +408,7 @@ The models used for regression supported the use of several parameters that coul
 
 The dataset was randomly spilt into 70% for training and 30% for testing. For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Extra Tree model is shown in Figure 22.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2022.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2022.PNG)
 
 <p align="center">
 FIGURE 22: EXTRA TREES REGRESSION MODEL FEATURE IMPORTANCE CHART
@@ -432,7 +432,7 @@ Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 tot
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 23, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2023.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2023.PNG)
 
 <p align="center">
 FIGURE 23: FEATURE CORRELATION
@@ -440,7 +440,7 @@ FIGURE 23: FEATURE CORRELATION
 
 For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Extra Tree model is shown in Figure 24.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2024.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2024.PNG)
 
 <p align="center">
 FIGURE 24: RANDOM FOREST REGRESSION MODEL FEATURE IMPORTANCE CHART
@@ -542,7 +542,7 @@ As in the case of Regression modeling, feature correlation was carried out to de
 
 For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest, Extra Trees and Gradient Boosting models also had their Feature Importance bar charts plotted. The chart for the Gradient Boosting model is shown in Figure 25.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2025.PNG)
+![](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/figures/Figure%2025.PNG)
 
 <p align="center">
 FIGURE 25: GRADIENT BOOSTING CLASSIFICATION MODEL FEATURE IMPORTANCE CHART
