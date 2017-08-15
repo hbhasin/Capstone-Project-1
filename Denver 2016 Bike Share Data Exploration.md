@@ -148,7 +148,7 @@ FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
 ## Checkouts per Membership Type 
 Denver B-cycle has a number of different membership passes. The following were the top ten by number of checkouts in 2016 (Figure 4).
 
-Membership Type | Number of Checkout
+Membership Type | Number of Checkouts
 --------------- | -------------------
 24-hour Kiosk Only (Denver B-cycle | 85,680
 Annual Plus (Denver B-cycle) | 82,202
