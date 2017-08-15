@@ -206,7 +206,7 @@ tr:nth-child(even) {
 <p>In particular, the “Not Applicable” membership type accounted for more than 15% of the 419,611 trips. Perhaps some of these trips were used in the Denver B-cycle annual report.</p>
 <p>Also over 2.3% of the Denver B-cycle rides (9,954 rides) had the same checkout station as return station with a trip duration of only 1 minute (Figure 1). Again, Tyler’s explanation of why these trips should be removed from the dataset makes sense - “I believe these should be filtered out because I believe the majority of these “rides” are likely people checking out a bike, and then deciding after a very short time that this particular bike doesn’t work for them. I believe that most of the same-kiosk rides under 5 minutes or so likely shouldn’t count, but only culled the ones that were one minute long”.</p>
 <div class="figure"><img src="figures/Figure%201.PNG"></div>
-<p align="center">FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME</p>
+<p>FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME</p>
 <p>There were 6574 rows in the Trips dataset that had kiosk names not in the Kiosk Master List. These 6574 rows were removed accordingly.</p>
 <p>Removing the 9,954 rows with a trip duration of 1 minute and 6574 rows with invalid kiosk names resulted in <strong>394,431 Denver B-cycle rides in 2016</strong>.</p>
 <h3 id="distance-traveled">Distance Traveled</h3>
@@ -371,11 +371,11 @@ tr:nth-child(even) {
 <h3 id="checkout-kiosks">Checkout Kiosks</h3>
 <p>The use of Tableau aided in the creation of the following map showing the popularity of the various Checkout Kiosks (Figure 2). The size of the circle is proportional to the number of checkouts from that kiosk in 2016.</p>
 <div class="figure"><img src="figures/Figure%202.PNG"/></div>
-<p align="center">FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016</p>
+<p>FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016</p>
 <h3 id="return-kiosks">Return Kiosks</h3>
 <p>Similarly, the use of Tableau aided in the creation of the following map showing the popularity of the various Return Kiosks (Figure 3). The size of the circle corresponds to the number of checkouts returned to that kiosk in 2016.</p>
 <div class="figure"><img src="figures/Figure%203.PNG"/></div>
-<p align="center">FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016</p>
+<p>FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016</p>
 <h2 id="checkouts-per-membership-type">Checkouts per Membership Type</h2>
 <p>Denver B-cycle has a number of different membership passes. The following were the top ten by number of checkouts in 2016 (Figure 4).</p>
 <table>
@@ -429,49 +429,49 @@ tr:nth-child(even) {
 </tbody>
 </table>
 <div class="figure"><img src="figures/Figure%204.PNG"></div>
-<p align="center">FIGURE 4: NUMBER OF CHECKOUTS BY MEMBERSHIP TYPE IN 2016</p>
+<p>FIGURE 4: NUMBER OF CHECKOUTS BY MEMBERSHIP TYPE IN 2016</p>
 <h2 id="ridership-by-calendar-and-clock-variables">Ridership by Calendar and Clock Variables</h2>
 <h3 id="ridership-by-hour">Ridership by Hour</h3>
 <p>Bike checkout time is probably the most important attribute in the Trips dataset. Each checkout time was converted into its integer hour. For example, 7:02 AM or 7:59 AM would be converted to an integer of 7. In this way, total number of checkouts could be aggregated for the year and plotted against their hours of the day, as shown in Figure 5.</p>
 <p>It appears that the highest number of checkouts occur between 4 PM and 5 PM with ridership increasing steadily from 10 AM onwards.</p>
 <div class="figure"><img src="figures/Figure%205.PNG"></div>
-<p align="center">FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016</p>
+<p>FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016</p>
 <p>Figure 6 shows the average distance ridden by the hour of the day in 2016. More distance is covered during the 10 AM period and declining steadily after 3 PM.</p>
 <div class="figure"><img src="figures/Figure%206.PNG"></div>
-<p align="center">FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016</p>
+<p>FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016</p>
 <h2 id="ridership-by-hour-and-weekday">Ridership by Hour and Weekday</h2>
 <p>Figure 7 shows that weekday ridership patterns are similar. On the other hand weekend ridership demonstrate a busy afternoon (between 12 PM and 3 PM)</p>
 <div class="figure"><img src="figures/Figure%207.PNG"></div>
-<p align="center">FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016</p>
+<p>FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016</p>
 <h2 id="ridership-by-month">Ridership by Month</h2>
 <p>Monthly checkouts, as shown in Figure 8, suggest high ridership during the summer months and low ridership during the winter months.</p>
 <div class="figure"><img src="figures/Figure%208.PNG"></div>
-<p align="center">FIGURE 8: TOTAL CHECKOUTS BY MONTH IN 2016</p>
+<p>FIGURE 8: TOTAL CHECKOUTS BY MONTH IN 2016</p>
 <h2 id="merging-with-weather">Merging with Weather</h2>
 <p>It is highly likely that weather plays a very important role in bike ridership and bike checkout times. This was shown in the previous plots on total checkouts per hour of the day, by weekday, and by month. To verify this, weather data obtained from Dark Sky API was merged with the Trips dataset and several graphs plotted to visualize the relationships.</p>
 <h3 id="checkouts-vs.-daily-temperature">Checkouts vs. Daily Temperature</h3>
 <p>Figure 9 shows the total number of checkouts against maximum and minimum daily temperature. It clearly suggests that ridership increases as the temperature increases and vice-versa.</p>
 <div class="figure"><img src="figures/Figure%209.PNG"></div>
-<p align="center">FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016</p>
+<p>FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016</p>
 <p>Apparent temperature, as defined by Dark Sky, is “apparent (or “feels like”) temperature in degrees Fahrenheit”. It appears to have a subtle effect on bike ridership as shown in Figure 10.</p>
 <div class="figure"><img src="figures/Figure%2010.PNG"></div>
-<p align="center">FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016</p>
+<p>FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016</p>
 <h2 id="checkouts-vs.-daily-cloud-cover">Checkouts vs. Daily Cloud Cover</h2>
 <p>Dark Sky defines Cloud Cover as “the percentage of sky occluded by clouds, between 0 and 1, inclusive”. Figures 11 shows the total number of checkouts against daily cloud cover. They clearly suggest that ridership is highest as the cloud cover stays at around 0.15.</p>
 <div class="figure"><img src="figures/Figure%2011.PNG"></div>
-<p align="center">FIGURE 11: TOTAL CHECKOUTS BY DAILY CLOUD COVER IN 2016</p>
+<p>FIGURE 11: TOTAL CHECKOUTS BY DAILY CLOUD COVER IN 2016</p>
 <h2 id="checkouts-vs.-daily-wind-speed">Checkouts vs. Daily Wind Speed</h2>
 <p>Wind speed is reported in miles per hour. As shown in Figure 12, ridership does not seem to be somewhat impacted by higher wind speeds.</p>
 <div class="figure"><img src="figures/Figure%2012.PNG"></div>
-<p align="center">FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016</p>
+<p>FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016</p>
 <h2 id="checkouts-vs.-daily-humidity">Checkouts vs. Daily Humidity</h2>
 <p>Humidity is defined by Dark Sky as “relative humidity, between 0 and 1. Figure 13 shows decreased ridership at higher humidity levels.</p>
 <div class="figure"><img src="figures/Figure%2013.PNG"></div>
-<p align="center">FIGURE 13: TOTAL CHECKOUTS BY DAILY HUMIDITY IN 2016</p>
+<p>FIGURE 13: TOTAL CHECKOUTS BY DAILY HUMIDITY IN 2016</p>
 <h2 id="checkouts-vs.-daily-visibility">Checkouts vs. Daily Visibility</h2>
 <p>Visibility is measured in miles and capped at 10 miles, according to Dark Sky. As Figure 14 shows, ridership peaks when visibility is at 10 miles.</p>
 <div class="figure"><img src="figures/Figure%2014.PNG"></div>
-<p align="center">FIGURE 14: TOTAL CHECKOUTS BY DAILY VISIBILITY IN 2016</p>
+<p>FIGURE 14: TOTAL CHECKOUTS BY DAILY VISIBILITY IN 2016</p>
 <h2 id="days-with-highestlowest-ridership">Days with Highest/Lowest Ridership</h2>
 <p>Another interesting data discovery was the fact that Saturdays and Sundays had the highest and lowest ridership depending upon the weather. In his study, Tyler suggests that this may be due to “‘weekend warriors’ who rent B-cycles for pleasure and are highly affected by the weather in their decision to ride”. This may well be the case.</p>
 <h3 id="highest-ridership">Highest Ridership</h3>
@@ -665,21 +665,21 @@ The scatter plots in Figure 15 and 16 show that the relationship between the num
 
 ![](figures/Figure%2015.PNG)
 
-<p align="center">FIGURE 15: TOTAL CHECKOUTS BY HOURLY TEMPERATURE IN 2016</p>
+<p>FIGURE 15: TOTAL CHECKOUTS BY HOURLY TEMPERATURE IN 2016</p>
 <div class="figure"><img src="figures/Figure%2016.PNG"></div>
-<p align="center">FIGURE 16: TOTAL CHECKOUTS BY HOURLY APPARENT TEMPERATURE IN 2016</p>
+<p>FIGURE 16: TOTAL CHECKOUTS BY HOURLY APPARENT TEMPERATURE IN 2016</p>
 <h3 id="checkouts-vs.-hourly-humidity">Checkouts vs. Hourly Humidity</h3>
 <p>Figure 17 shows that humidity affects ridership significantly.</p>
 <div class="figure"><img src="figures/Figure%2017.PNG"></div>
-<p align="center">FIGURE 17: TOTAL CHECKOUTS BY HOURLY HUMIDITY IN 2016</p>
+<p>FIGURE 17: TOTAL CHECKOUTS BY HOURLY HUMIDITY IN 2016</p>
 <h3 id="checkouts-vs.-hourly-cloud-cover">Checkouts vs. Hourly Cloud Cover</h3>
 <p>As shown in Figure 18 Cloud Cover certainly impacts ridership.</p>
 <div class="figure"><img src="figures/Figure%2018.PNG"></div>
-<p align="center">FIGURE 18: TOTAL CHECKOUTS BY HOURLY CLOUD COVER IN 2016</p>
+<p>FIGURE 18: TOTAL CHECKOUTS BY HOURLY CLOUD COVER IN 2016</p>
 <h3 id="checkouts-vs.-hourly-wind-speed">Checkouts vs. Hourly Wind Speed</h3>
 <p>Data on wind speed indicates it is clustered heavily in 0 to 8 miles per hour range, as shown in Figure 19.</p>
 <div class="figure"><img src="figures/Figure%2019.PNG"></div>
-<p align="center">FIGURE 19: TOTAL CHECKOUTS BY HOURLY WIND SPEED IN 2016</p>
+<p>FIGURE 19: TOTAL CHECKOUTS BY HOURLY WIND SPEED IN 2016</p>
 <h3 id="checkouts-vs.-hourly-visibility">Checkouts vs. Hourly Visibility</h3>
 <p>As shown in Figure 20 visibility at 10 miles has the greatest impact on ridership.</p>
 <div class="figure"><img src="figures/Figure%2020.PNG"></div>
