@@ -274,7 +274,7 @@ Visibility is measured in miles and capped at 10 miles, according to Dark Sky. A
 FIGURE 14: TOTAL CHECKOUTS BY DAILY VISIBILITY IN 2016
 </p>
 
-### Days with Highest/Lowest Ridership
+## Days with Highest/Lowest Ridership
 Another interesting data discovery was the fact that Saturdays and Sundays had the highest and lowest ridership depending upon the weather. In his study, Tyler suggests that this may be due to “‘weekend warriors’ who rent B-cycles for pleasure and are highly affected by the weather in their decision to ride”. This may well be the case.
 
 ### Highest Ridership
